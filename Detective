@@ -1,0 +1,99 @@
+define c = Character('Claire')
+
+define gb = Character('Grégoire Bellemonté')
+
+
+
+
+label start:
+    
+    "Unknown" "Right, so first, we need to go over the files."
+    "Unknown" "Now they are organized from A-Z by surnames, our suspect is in the-"
+    "Unknown" "Hey? Are you listening to me?"
+    
+    
+    scene bg room
+
+    c "Ugh. You need to stop daydreaming. Please."
+    c "Anyway...What was your name again?"
+    
+    $ player_name = renpy.input("What is your name?")
+
+    $ player_name = player_name.strip()
+
+    if player_name == "":
+         $ player_name="Dakota"
+
+    
+    c "Oh yes. That's what it was. As I was saying, %(player_name)s..."
+    c "I'll need you to locate the file of our suspect whilst I quickly talk to my supervisor. I'm sure you can cope with that."
+    
+    "Claire hands you the files and hastily walks out of the office."
+    
+    "Now. Who are we looking for?"
+    
+    menu:
+        
+        "Grégoire Bellemonté":
+            "Grégoire Bellemonté? Oh yes. This isn't his first time in our observation. What has he done this time?"
+            $ criminal = "French_Guy"
+            
+            
+        
+        "Laura Harley":
+            "Laura Harley? I have no idea who she is. She wasn't in our criminal records until recently. She must be a first time offender."
+            $ criminal = "English_Girl"
+        
+        
+        "Shion Mishu":
+            "I know him. The notorious Japanese bandit. Thinks he's a vigilante. Wonder what he's done this time."
+            $ criminal = "Japanese_Guy"
+            
+        
+        "Arabella Jackson":
+            "Who? Her name has never come up before. She must have done something pretty serious."
+            $ criminal = "Brazilian_Girl"
+            
+    
+    
+    player_name "Right." 
+    player_name "I need to find out what he is under our suspicion for."
+    
+    
+    if criminal == "French_Guy":
+        player_name "Okay. It says here that he is suspected of the murder of Suzanne Moreau. The daughter of a Patisserie owner."
+        player_name "Her body was found just a couple of weeks ago. We found traces of cyanide poisoned cake in her intestines, though our researchers say it wouldn't have been the cause of her dying, it would have only made her ill and sedated."
+        player_name "Says here they also found the hairs of a Beagle-Harrier on her blouse. As she doesn't own a dog, this is quite strange."
+        player_name "Grégoire Bellemonté was seen near the bakery on the day that she was last seen."
+        player_name "He also owns a dog. We still need to investigate the breed and see if the hairs found on Suzanne's body match that of his dog."
+        player_name "Lets see... What has he done in the past?"
+        player_name "Looks like he was investigated about a kidnapping a couple years ago but was let go as there wasn't enough evidence to sentence him."
+        player_name "Hmm."
+        
+        
+    
+        
+        "Before we start the investigation, do you reckon Grégoire Bellemonté murdered Suzanne Moreau?"
+        
+        menu:
+            
+            "Yes, it's pretty obvious.":
+            
+            
+                
+    
+    
+    
+            
+            
+            
+            
+                
+            
+           
+ 
+        
+        
+        
+        
+   
