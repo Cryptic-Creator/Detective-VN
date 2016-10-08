@@ -3,8 +3,6 @@ define c = Character('Claire')
 define gb = Character('Grégoire Bellemonté')
 
 
-
-
 label start:
     
     "Unknown" "Right, so first, we need to go over the files."
@@ -38,7 +36,6 @@ label start:
             "Grégoire Bellemonté? Oh yes. This isn't his first time in our observation. What has he done this time?"
             $ criminal = "French_Guy"
             
-            
         
         "Laura Harley":
             "Laura Harley? I have no idea who she is. She wasn't in our criminal records until recently. She must be a first time offender."
@@ -55,10 +52,8 @@ label start:
             $ criminal = "Brazilian_Girl"
             
     
-    
     player_name "Right." 
     player_name "I need to find out what he is under our suspicion for."
-    
     
     if criminal == "French_Guy":
         player_name "Okay. It says here that he is suspected of the murder of Suzanne Moreau. The daughter of a Patisserie owner."
@@ -70,8 +65,6 @@ label start:
         player_name "Looks like he was investigated about a kidnapping a couple years ago but was let go as there wasn't enough evidence to sentence him."
         player_name "Hmm."
         
-        
-    
         
         "Before we start the investigation, do you reckon Grégoire Bellemonté murdered Suzanne Moreau?"
         
