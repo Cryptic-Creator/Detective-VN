@@ -1,14 +1,11 @@
 define c = Character('Claire')
 
 define gb = Character('Grégoire Bellemonté')
-
-
 label start:
     
     "Unknown" "Right, so first, we need to go over the files."
     "Unknown" "Now they are organized from A-Z by surnames, our suspect is in the-"
     "Unknown" "Hey? Are you listening to me?"
-    
     
     scene bg room
 
@@ -64,7 +61,6 @@ label start:
         player_name "Lets see... What has he done in the past?"
         player_name "Looks like he was investigated about a kidnapping a couple years ago but was let go as there wasn't enough evidence to sentence him."
         player_name "Hmm."
-        
         
         "Before we start the investigation, do you reckon Grégoire Bellemonté murdered Suzanne Moreau?"
         
