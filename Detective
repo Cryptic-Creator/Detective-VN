@@ -67,6 +67,27 @@ label start:
         menu:
             
             "Yes, it's pretty obvious.":
+            player_name "After all the information I just heard, wouldn't it be the most logical assumption?"
+                
+                
+                
+            "No, I don't have enough evidence to assume anything about him.":
+                player_name "It's be wrong to assume that he did it at this stage."
+                
+                
+                
+        
+        c "Good, seems that you're up to date with the situation."
+        c "Do you have any questions you'd like to ask me?"
+        
+        menu:
+            "Where was Suzanne's body found?":
+                c "Suzanne's body was found in France. In an alley way only a block away from her apartment."
+            
+            
+
+    
+    
             
             
             
