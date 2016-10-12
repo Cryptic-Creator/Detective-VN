@@ -4,6 +4,8 @@ define gb = Character('Grégoire Bellemonté')
 label start:
     
     "Unknown" "Right, so first, we need to go over the files."
+    "Unknown" "All the files you will need are located in this file cabinet."
+    "Unknown" "If the file you need isn't in there, it is either on my desk or is being borrowed by Dave from forensics."
     "Unknown" "Now they are organized from A-Z by surnames, our suspect is in the-"
     "Unknown" "Hey? Are you listening to me?"
     
@@ -83,7 +85,48 @@ label start:
         menu:
             "Where was Suzanne's body found?":
                 c "Suzanne's body was found in France. In an alley way only a block away from her apartment."
+                
+            "How old was she?"
+                c "She was 38 years old."
+                
+                
+                
+         c "Well I better be going now. I have a meeting in 10 minutes and I don't want to disappoint my boss. My supervisor is already giving me slack for taking a day off."
+         c "I don't like him very much. Don't tell him I said that..."
+         c "Anyways, sorry I'm rambling. Go home now and just think about the case, if you think of anything make sure to let us know."
+         c "Make sure you're in here tomorrow. 8 o'clock. Don't forget."
+         c "Anyways, I really have to be going now. Bye."
+         
+         menu:
+             player_name "Goodbye, Ms.Claire.":
+                 c "No need to be so formal :)"
+                 
+             player_name "
+             
+                 
+                 
+              
+             
+     
+             
+         
+         
+         
+                
+                
+                
+                
+                
+                
+               
+              
+               
+               
+                
+                
             
+           
+           
             
 
     
