@@ -1,0 +1,132 @@
+define d = Character('Unknown Man')
+define m = Character('Unknown Woman')
+define pov = Character('[povname]')
+
+label start:
+    
+
+    scene bg bus
+    
+    d "Jesus Helen, are you seeing this?"
+    d "They want higher class citizens to donate to help hospital fees of the filth."
+    d "Seriously? Ever since the disease hit, the government has been using it to try to get more money out of people like us."
+    d "The nerve of some people."
+
+    m "C'mon, you have to be considerate of the less fortunate. The government need our money to help them recover."
+    m "Keep an open mind. What if we were in that situation, you'd want people to donate money to help us out."
+    m "It's not like they can help it anyway, that disease came out of nowhere..."
+
+    d "I don't care, we still shouldn't help them. I doubt the government even need the money to help them, I'm sure they're just using it as a excuse to take our hard-earned cash."
+    d "Who cares if they look down on us for not donating. It doesn't matter."
+
+    m "Sigh..."
+    m "What do you think...?"
+    m "...Sorry, what's your name?"
+    
+    python:
+        povname = renpy.input("Please enter your name?")
+        povname = povname.strip()
+
+        if not povname:
+             povname = "Dakota"
+
+    pov "Oh! Uh, it's [povname]"
+    
+    m "What do you think [povname]? Sorry to suddenly bring you into this but I'd like another opinion."
+    m "Do you think it's right that people like us are being pressured into this whole donating thing?"
+    m "Or are you like my idiot friend here and think it's just the government trying to get our money."
+    
+    menu:
+        
+        "I agree with you.":
+            pov "I agree with you, think we should be donating to help cover the hospital fees. It's not the patient's fault that they caught the virus. It came out of nowhere."
+            pov "They likely didn't even know about the disease at the time that they caught it."
+            $ Belief = "With"
+            
+            
+        "I disagree with you.":
+            pov "Don't you know anything about our government? It wouldn't be the first time they've used something like this to get more money off us."
+            pov "Feel free to give them your money but it's just going to their pockets."
+            $ Belief = "Against"
+            
+            
+    if Belief == "With":
+        
+        m "Exactly! If only my moronic friend thought like you."
+        d "Hey!"
+        d "It ain't my fault this dumbass is dumb enough to think like you."
+        d "Have fun wasting your cash, you two. Don't look to me for help when you go broke. You'll probably end up mixing with middle class citizens and end up catching the disease yourselves."
+        m "Be quiet! Keep your opinion to yourself please."
+        
+        
+    if Belief == "Against":
+        
+        d "See! At least [povname] is on my side."
+        d "We're not stupid enough to be scammed like you."
+        m "Ugh. They wouldn't do that, that's immoral."
+        d "Look I'm not going to stop you from giving your money away but just know that you aren't helping anybody."
+        m "Pfft.. Whatever."
+        
+    
+    d "Oh, it's our stop now. Thanks for debating with us [povname]."
+    m "Yeah, even if it did get a bit heated."
+    pov "Oh you're welcome...Sorry what were your names?"
+    m "I'm Mary and that's Dan."
+    "Dan" "Anyway, hope you don't catch the virus, see you around."
+    "Mary" "Bye!"
+    
+    if Belief == "With":
+        "You gained Mary's respect for siding with her."
+    
+    if Belief == "Against":
+        "You gained Dan's respect for siding with him."
+        
+        
+        
+        
+    scene bg fronthouse
+    
+    "There seems to be a letter taped to the door."
+    
+    menu:
+        "Read it":
+            "It's an eviction notice."
+            $ Note == "Read"
+            
+        "Ignore it":
+            "You ignore the note, your parents can deal with that."
+            $ Note == "Unread"
+            
+            
+    "You walk inside and the lovely scent of a roast dinner fills your nostrils."
+    "You can also hear the sound of your brothers playing video games."
+    "Where will you go first?"
+    
+    menu:
+        
+            
+            
+    
+    
+    
+        
+        
+    
+            
+        
+
+
+
+
+
+    
+
+
+
+   
+   
+
+
+
+
+
