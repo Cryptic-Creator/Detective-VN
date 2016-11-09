@@ -1,6 +1,7 @@
 define d = Character('Unknown Man')
 define m = Character('Unknown Woman')
 define pov = Character('[povname]')
+define mo = Character('Mum')
 
 label start:
     
@@ -109,6 +110,11 @@ label start:
             
     if Area1 == "Kitchen":
             "You step into the kitchen, you're greeted by your mum making some delicious roast dinner."
+            mo "Hey! How was school?"
+             menu:
+                  "
+            
+            
             
     
     
