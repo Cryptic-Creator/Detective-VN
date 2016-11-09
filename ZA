@@ -103,7 +103,15 @@ label start:
     "Where will you go first?"
     
     menu:
-        
+        "Go to the the kitchen first.":
+            "You make your way over to the kitchen, making sure to dodge the building blocks that your little sister is playing with.":
+            $ Area1 == "Kitchen"
+            
+    if Area1 == "Kitchen":
+            "You step into the kitchen, you're greeted by your mum making some delicious roast dinner."
+            
+    
+    
             
             
     
